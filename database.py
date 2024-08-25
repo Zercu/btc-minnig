@@ -10,7 +10,6 @@ def create_tables():
     conn = create_connection()
     cursor = conn.cursor()
 
-    # Create users table
     cursor.execute('''CREATE TABLE IF NOT EXISTS users (
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         username TEXT NOT NULL UNIQUE,
@@ -18,7 +17,6 @@ def create_tables():
                         role TEXT NOT NULL
                     )''')
 
-    # Create mining_records table
     cursor.execute('''CREATE TABLE IF NOT EXISTS mining_records (
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         username TEXT NOT NULL,
@@ -60,4 +58,3 @@ def get_mining_records(username):
     records = cursor.fetchall()
     conn.close()
     return records
-  

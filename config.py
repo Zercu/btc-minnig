@@ -1,4 +1,5 @@
-# Telegram Bot Token from BotFather
+# config.py
+
 TELEGRAM_TOKEN = 'your_telegram_bot_token'
 
 # Admin credentials
@@ -11,7 +12,7 @@ RPC_PASSWORD = 'your_rpc_password'
 RPC_HOST = '127.0.0.1'
 RPC_PORT = '8332'
 
-# Mining Software Path (BFGMiner or CGMiner)
-MINER_PATH = '/usr/bin/bfgminer'  # Replace with the path to your mining software
+# Mining Software Path
+MINER_PATH = '/usr/bin/bfgminer'  # Make sure this is correct
 POOL_URL = 'stratum+tcp://your.pool.url:port'
-WALLET_ADDRESS = 'your_bitcoin_w
+WALLET_ADDRESS = 'your_bitcoin_wallet_address'
